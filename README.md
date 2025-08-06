@@ -20,6 +20,10 @@ This project allows users to add tasks dynamically, managed entirely in the brow
 ---
 
 ## 📁 Project Structure
+TaskFlow/
+├── index.html
+├── style.css
+└── script.js
 
 
 ---
