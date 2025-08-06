@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskFlow - Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <nav class="navbar">
+  <div class="logo">✅ TaskFlow</div>
+
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+    <li><a href="#tasks"><i class="fas fa-tasks"></i> Tasks</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- ✅ Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to TaskFlow 🧠</h1>
+    <p>Organize your day with simple, beautiful task tracking</p>
+  </section>
+
+  <!-- ✅ About Section -->
+  <section id="about" class="about">
+    <h2>About TaskFlow</h2>
+    <p>This is a beginner-friendly Java project with frontend and backend integration. You can add tasks, manage your schedule, and boost your productivity.</p>
+  </section>
+
+  <!-- ✅ Task Section -->
+  <section id="tasks">
+    <div class="container">
+      <h2>📋 Manage Your Tasks</h2>
+
+      <!-- Static JS-based form -->
+      <input type="text" id="taskInput" placeholder="Enter a new task" />
+      <button onclick="addTask()">Add Task (JS)</button>
+      <ul id="taskList"></ul>
+
+      <hr>
+
+      <!-- Dynamic Servlet-based form -->
+      <form action="addTask" method="post">
+        <input type="text" name="task" placeholder="Enter task to send to backend" required />
+        <button type="submit"><i class="fas fa-paper-plane"></i> Add Task (Servlet)</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ✅ Chatbot Section -->
+  <section class="chatbot">
+    <h2>💬 ChatBot (Coming Soon)</h2>
+    <div class="chatbox">
+      <p>Hello! I'm TaskBot. How can I help you today?</p>
+      <input type="text" placeholder="Type a message..." />
+    </div>
+  </section>
+
+  <!-- ✅ Contact Section -->
+  <section id="contact" class="contact">
+    <h2>📞 Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+    </form>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2025 TaskFlow | Made by Ayush ❤️</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

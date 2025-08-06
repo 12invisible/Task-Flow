@@ -1,0 +1,149 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background: #212121;
+  color: rgb(255, 255, 255);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  color: rgb(143, 147, 103);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffd54f;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(to right, #95c7f1, #44a7c0);
+  color: #333;
+  text-align: center;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Task Section */
+.container {
+  padding: 40px;
+  background: #ffffff;
+  margin: 40px auto;
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #4e47d3;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul li {
+  background: #eee;
+  padding: 10px;
+  margin: 8px auto;
+  width: 80%;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Chatbot */
+.chatbot {
+  background: #f0f0f0;
+  padding: 40px;
+  text-align: center;
+}
+
+.chatbox {
+  margin: 20px auto;
+  padding: 20px;
+  width: 60%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chatbox input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Contact */
+.contact {
+  background: #e0eafc;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #212121;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .socials a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+}
+
+footer .socials a:hover {
+  color: #ffd54f;
+}
